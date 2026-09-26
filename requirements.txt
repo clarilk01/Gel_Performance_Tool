@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+plotly>=5.19
+streamlit>=1.50
+pytest>=8
