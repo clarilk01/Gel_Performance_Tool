@@ -42,6 +42,14 @@ An interactive dashboard that predicts the **optimal fermentation length**
 death and host-cell protein (HCP) impurities, which cut downstream yield
 and wear the chromatography gel.
 
+## Screenshots
+**Prediction**: optimal length, harvest window and predicted titer / viability / HCP curves
+![Prediction tab](docs/screenshots/prediction.png)
+
+| Sensitivity | Similar batches | Model validation |
+|---|---|---|
+| ![Sensitivity tab](docs/screenshots/sensitivity.png) | ![Similar batches tab](docs/screenshots/similar_batches.png) | ![Model validation tab](docs/screenshots/model_validation.png) |
+
 ## How it works
 1. **History**: `src/fermentation/simulator.py` generates synthetic
    historical batches (temperature, pH, dissolved O₂, inoculum density,
