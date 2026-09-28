@@ -68,11 +68,15 @@ and wear the chromatography gel.
 
 ## Run it
 ```bash
+cd Gel_Performance_Tool          # every command runs from the repository root
 pip install -r requirements.txt
 streamlit run dashboard/fermentation_dashboard.py
-pytest tests            # optional
+pytest                  # optional
 python src/fermentation/simulator.py   # optional: export synthetic data to data/synthetic/
 ```
+
+Running a command from another folder (e.g. your home directory) fails with
+`can't open file .../src/fermentation/simulator.py`.
 
 Uploaded CSVs need one row per sample with the columns `batch_id, temperature,
 ph, dissolved_oxygen, inoculum_density, feed_rate, hour, titer, viability, hcp`.
